@@ -17,3 +17,28 @@ for (let i = 0; i < vacationSpots.length; i++) {
 // Bali
 // Paris
 // Tulum
+
+// Nested loops
+const myArray = [6, 19, 20];
+const yourArray = [19, 81, 2];
+for (let i = 0; i < myArray.length; i++) {
+  for (let j = 0; j < yourArray.length; j++) {
+    if (myArray[i] === yourArray[j]) {
+      console.log('Both loops have the number: ' + yourArray[j])
+    }
+  }
+};
+
+// ______________
+const bobsFollowers = ['Jill','Phil','Bill','Neil'];
+const tinasFollowers = ['Jill','Ron','Bill'];
+const mutualFollowers = []
+for (let i=0; i<bobsFollowers.length; i++){
+  for (let j=0; j<tinasFollowers.length; j++){
+   
+    if (bobsFollowers[i] === tinasFollowers[j]){
+      mutualFollowers.push(bobsFollowers[i])
+    }
+  }
+}
+console.log(mutualFollowers)
