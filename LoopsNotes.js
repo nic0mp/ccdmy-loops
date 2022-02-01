@@ -42,6 +42,7 @@ for (let i=0; i<bobsFollowers.length; i++){
   }
 }
 console.log(mutualFollowers)
+// output: (2) ['Jill', 'Bill']
 
 // WHILE LOOP
 const cards = ['diamond', 'spade', 'heart', 'club'];
@@ -52,4 +53,24 @@ while(currentCard != 'spade') {
   currentCard = cards[Math.floor(Math.random()*4)];
   console.log(currentCard)
 }
+// Do..While
+const firstMessage = 'I will print!';
+const secondMessage = 'I will not print!'; 
+ 
+// A do while with a stopping condition that evaluates to false
+do {
+ console.log(firstMessage)
+} while (true === false);
+ 
+// A while loop with a stopping condition that evaluates to false
+while (true === false){
+  console.log(secondMessage)
+};
 
+// Do while loop
+let cupsOfSugarNeeded = 3;
+let cupsAdded = 0;
+do {
+  cupsAdded = cupsAdded + 1
+  console.log(cupsAdded + ' cup was added')
+} while ( cupsAdded < cupsOfSugarNeeded);
