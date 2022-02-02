@@ -26,5 +26,7 @@ for(let i=0; i<input.length; i++) {
     resultArr.push(input[i]);
   }
 }
+// Use .join() method make a continuous string with '' as an argument 
+// (or, single quotations with no space) so the elements aren’t separated
 console.log(resultArr.join('').toUpperCase());
 
